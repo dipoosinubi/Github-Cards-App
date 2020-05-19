@@ -7,7 +7,7 @@ import testData from '../testData';
 const CardList = (props) =>  (
 
     <div>
-      {testData.map(profile => < Card {...profile}/>)}
+      {props.profiles.map(profile => < Card {...profile}/>)}
     </div>
 )
 
