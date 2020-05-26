@@ -16,7 +16,7 @@ class Form extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} style = {{ color: 'white', backgroundColor: "#0c596d"}} >
                 <input
                     type='text'
                     placeholder='Github Username'

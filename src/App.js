@@ -18,9 +18,9 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className = 'container'>
         <Header title="The Github Cards App" />
-        <Form onSubmit = {this.addNewProfile}/>
+        <Form onSubmit = {this.addNewProfile} />
         <CardList profiles={this.state.profiles} />
       </div>
 

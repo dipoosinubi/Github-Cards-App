@@ -1,5 +1,7 @@
-/* .github-profile {
+.github-profile {
   margin: 1rem;
+  background-color: #0c596d 100vh;
+  color: white;
 }
 .img {
     width: 75px;
@@ -26,4 +28,13 @@ form {
 	text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-} */
+}
+.container {
+  background-color: #0c596d;
+  height: 100%;
+  width: 100vw;
+  flex: 1;
+  align-items: center;
+  display: inline-block;
+  
+}
