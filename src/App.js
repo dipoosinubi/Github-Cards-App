@@ -10,11 +10,17 @@ class App extends React.Component {
   state = {
     profiles: testData,
   }
+  
+  addNewProfile = (profileData) => {
+    this.setState(prevState => ({
+      profiles: [...prevState.profiles, profileData],
+    }));
+  }
   render() {
     return (
       <div>
         <Header title="The Github Cards App" />
-        <Form />
+        <Form onSubmit = {this.addNewProfile}/>
         <CardList profiles={this.state.profiles} />
       </div>
 
