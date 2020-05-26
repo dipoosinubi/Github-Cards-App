@@ -19,9 +19,11 @@ class App extends React.Component {
   render() {
     return (
       <div className = 'container'>
+        <React.Fragment>
         <Header title="The Github Cards App" />
         <Form onSubmit = {this.addNewProfile} />
         <CardList profiles={this.state.profiles} />
+        </React.Fragment>
       </div>
 
     );
